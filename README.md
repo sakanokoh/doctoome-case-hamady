@@ -31,11 +31,14 @@ dans l'ordre et régénère tous les résultats et graphiques.
 
 | Dossier | Contenu |
 |---|---|
-| `notebooks/` | l'analyse commentée |
+| `notebooks/` | les fichiers notebooks |
 
 ## Hypothèses et choix de nettoyage
 
 ### 01_data-quality-check.ipynb
 `notebooks/01_data-quality-check.ipynb` contrôle la qualité des données (complétude, unicité, validité, cohérence). Chaque requête est suivie d'un constat, et un récapitulatif final liste les décisions appliquées au nettoyage.
+
+### 02_data-cleaning.ipynb
+`notebooks/02_data-cleaning.ipynb` applique ces décisions, écrit les tables propres dans `data_clean/` et construit `sessions_analysis` (une ligne par session) pour l'analyse.
 
 ## Réponses aux 4 questions

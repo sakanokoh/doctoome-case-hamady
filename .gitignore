@@ -1,3 +1,4 @@
 DoctoomEnv/
 __pycache__/
 .ipynb_checkpoints/
+data_clean/
