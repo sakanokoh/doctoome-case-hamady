@@ -12,10 +12,16 @@ J'ai travaillé avec Python 3.11.9 sous Windows. Pour tout relancer depuis zéro
 git clone https://github.com/sakanokoh/doctoome-case-hamady.git
 cd doctoome-case-hamady
 python -m venv VotreNomEnvVirtuel
-VotreNomEnvVirtuel\Scripts\activate          
+VotreNomEnvVirtuel\Scripts\activate        
 pip install -r requirements.txt
-
+jupyter notebook
 ```
+
+Puis exécuter les notebooks dans l'ordre, avec « Restart & Run All » :
+1. `notebooks/01_data-quality-check.ipynb` : contrôles qualité
+2. `notebooks/02_data-cleaning.ipynb` : nettoyage, écrit `data_clean/` (non versionné, régénéré ici)
+3. `notebooks/03_data-analysis.ipynb` : analyse, écrit les graphiques dans `figures/`
+
 
 Puis « Restart & Run All » : le notebook exécute les fichiers du dossier `sql/`
 dans l'ordre et régénère tous les résultats et graphiques.
@@ -31,7 +37,11 @@ dans l'ordre et régénère tous les résultats et graphiques.
 
 | Dossier | Contenu |
 |---|---|
-| `notebooks/` | les fichiers notebooks |
+| `data/` | données fournies (Parquet), jamais modifiées |
+| `notebooks/` | les 3 notebooks : qualité, nettoyage, analyse |
+| `figures/` | graphiques produits par le notebook 03 |
+| `presentation/` | slides (PDF et PowerPoint) |
+
 
 ## Démarche et priorités 
 
